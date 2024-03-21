@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./adivinare.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div id="gifContainer">
+        <img src="./assets/icegif-1268.gif" alt="GIF" />
+      </div>
+      <h1>Adivinare tu numero entre 1 a 100</h1>
+      <h2 id="numeroNuevo">Empecemos da clic en ok!</h2>
+      <br />
+      <button id="botonOk" onclick="empezar()">Ok</button>
+      <button
+        onclick="elNumeroEsMenor()"
+        style="visibility: hidden"
+        id="botonMenor"
+      >
+        Mi numero es menor
+      </button>
+      <button
+        id="botonAcertaste"
+        onclick="acertaste()"
+        style="visibility: hidden"
+      >
+        Acertaste
+      </button>
+      <button
+        onclick="elNumeroEsMayor()"
+        style="visibility: hidden"
+        id="botonMayor"
+      >
+        Mi numero es mayor
+      </button>
+    </main>
+    <script src="./adivinare.js"></script>
+  </body>
+</html>
